@@ -42,19 +42,24 @@
 
 // common blocks
 $text-dark: #1e1e1e
+$green: #17cc93
 
 body
-	font-family: arial 
+	font-family: "Segoe UI" 
 .wrap
 	width: 980px
 	margin: 0 auto 
-	+clr
+	+clr		
 .h3
 	color: $text-dark
 	text-decoration: none
 	font-weight: bold
 	font-size: 22px
 	line-height: 24px
+.strip
+	height: 2px
+	width: 105px
+	background: $green 	
 
 
 /*-----header----------------------------------------*/
@@ -63,8 +68,9 @@ body
 	background: #FFF 
 	position: absolute
 	width: 100%
+	font-family: arial 
 .header-in
-	padding: 19px 0px 17px 
+	padding: 19px 0px 16px 
 .header__left
 	float: left
 .header__center
@@ -92,7 +98,35 @@ body
 		line-height: 6px 
 		+transition (0.2s)
 		&:hover
-			color: #16AE7E
+			color: $green
+/*-----main------------------------------------------------*/
+.main
+	height: 593px
+	background: url(../img/main.png) no-repeat
+	+cover 
+	color: #FFF
+	.strip
+		margin-bottom: 11px 
+.main-in	
+	padding-top: 109px 	
+.main__headline
+	font-size: 52px
+	line-height: 63px
+	font-weight: bold
+	margin-bottom: 50px
+.main__descr	
+	font-size: 22px
+	line-height: 27px
+	margin-bottom: 42px
+.main__price	
+	margin-bottom: 19px
+.main__price-number
+	font-weight: bold
+	font-size: 54px
+	line-height: 54px
+	margin-right: 6px
+.main__price-val
+	vertical-align: 2px
 /*-----footer----------------------------------------------*/
 .footer
 	height: 2000px//kill
@@ -102,5 +136,20 @@ body
 	vertical-align: middle
 .i-logo
 	+s(i-logo)
-	margin-right: 3px					
-
+	margin-right: 3px	
+/*-----btn-------------------------------------------------*/
+.btn
+	background: $green 					
+	+border-radius (3px)
+	width: 265px
+	height: 45px
+	text-align: center
+	color: #FFF 
+	font-size: 20px
+	+box
+	+transition (0.2s)
+	&:hover
+		background: $green + #003030
+	&:active
+		background: $green + #505050 
+		+transform (scale(0.97))	 
