@@ -1,0 +1,106 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+//          +sized-sprite($icons, coderiver) //or
+// 			+s(codedby) //gets default value for spritemap as $icons
+// ### animation example
+//     +include keyframes(rotate)
+//        from
+//           +rotate(0)
+//        to
+//           +rotate(360)
+// ## animation usage
+//     body:hover
+// 	    +animation(rotate 200s linear infinite)
+// ## animations easing, see easings.net for full list and examples, tnx @ai
+//     transition: all 1.2s ceaser($ease-in)
+// ## gradient example
+//     +background-image(linear-gradient(#232323, #5c5c5c));
+//     +g(#232323, #5c5c5c);
+//	   horizontal
+//     +gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +min-screen(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts 
+// Save fonts to /css/fonts, after that write (eot, woff, ttf):
+// +font(book, cytiapro-black-webfont)  
+// =book
+// 	font-family: "book",arial,sans-serif 
+
+// common blocks
+$text-dark: #1e1e1e
+
+body
+	font-family: arial 
+.wrap
+	width: 980px
+	margin: 0 auto 
+	+clr
+.h3
+	color: $text-dark
+	text-decoration: none
+	font-weight: bold
+	font-size: 22px
+	line-height: 24px
+
+
+/*-----header----------------------------------------*/
+.header
+	+opacity(0.9)
+	background: #FFF 
+	position: absolute
+	width: 100%
+.header-in
+	padding: 19px 0px 17px 
+.header__left
+	float: left
+.header__center
+.header__right
+	float: right
+	.h3
+		font-size: 24px
+		line-height: 26px	
+.logo
+	text-decoration: none
+	.h3
+		display: inline-block
+		vertical-align: middle
+.nav
+	margin-left: 270px
+	+clr
+	li
+		float: left
+		margin-right: 37px
+	a			
+		text-decoration: none
+		color: $text-dark
+		font-family: "myriad pro"
+		vertical-align: bottom
+		line-height: 6px 
+		+transition (0.2s)
+		&:hover
+			color: #16AE7E
+/*-----footer----------------------------------------------*/
+.footer
+	height: 2000px//kill
+/*-----ico-------------------------------------------------*/
+.ico
+	display: inline-block
+	vertical-align: middle
+.i-logo
+	+s(i-logo)
+	margin-right: 3px					
+
