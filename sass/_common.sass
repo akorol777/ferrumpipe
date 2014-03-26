@@ -1,49 +1,6 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts 
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book",arial,sans-serif 
-
-// common blocks
 $text-dark: #1e1e1e
+$text-light: #7b7c7e
 $green: #17cc93
-
 body
 	font-family: "Segoe UI" 
 .wrap
@@ -56,20 +13,29 @@ body
 	font-weight: bold
 	font-size: 22px
 	line-height: 24px
+.h4
+	text-align: center
+	font-weight: normal
+	font-size: 24px
+	line-height: 24px
+	color: #303030 
 .strip
 	height: 2px
 	width: 105px
-	background: $green 	
-
-
+	background: $green
+.descr
+	color: $text-light
+	padding: 0 100px
+	text-align: center
+	font-size: 16px
+	line-height: 19px  
 /*-----header----------------------------------------*/
 .header
 	+opacity(0.9)
 	background: #FFF 
 	position: absolute
 	width: 100%
-	font-family: arial 
-.header-in
+	font-family: arial
 	padding: 19px 0px 16px 
 .header__left
 	float: left
@@ -127,16 +93,118 @@ body
 	margin-right: 6px
 .main__price-val
 	vertical-align: 2px
+/*-----block---------------------------------------------*/
+.block
+	padding: 36px 0 59px
+	background: #FFF  		 
+	.strip
+		margin: 0 auto 9px
+	.h4
+		margin-bottom: 25px 
+	.descr
+		margin-bottom: 47px
+	.benefits
+		margin-top: 70px	
+.block-dark		
+	background: #EDEFF4	
+.block_benefits
+	padding-bottom: 43px	 	
+/*-----price-----------------------------------------------*/	
+.price
+	color: #191919 
+	+clr
+	li
+		float: left
+		+border-radius (2px)
+		overflow: hidden
+		background: #FFF 
+		padding-bottom: 19px
+		margin-right: 25px
+	.last
+		margin-right: 0	
+	.btn	
+		margin: 0 auto
+		display: block 
+		width: 135px
+		font-size: 14px
+		line-height: 14px
+		height: 37px
+		font-weight: bold
+.price__img
+	width: 310px
+	height: 260px	
+	overflow: hidden
+	margin-bottom: 19px
+	img
+		height: 100% 
+.price__size, .price__spase, .price__weight
+	margin: 0 20px 
+.price__size
+	font-size: 32px
+	line-height: 32px
+	margin-bottom: 34px
+.price__spase
+	border-bottom: 1px solid #efeff0
+	padding-bottom: 14px
+	margin-bottom: 15px
+	+clr
+	.price__cost
+		color: #0099D3 	
+.price__weight
+	+clr
+	margin-bottom: 37px
+	.price__cost
+		color: #191919 
+.price__unit, .price__cost
+.price__unit
+	float: left
+	color: #717171 
+	font-size: 17px
+	line-height: 25px
+.price__cost
+	float: right
+	font-weight: bold
+	font-size: 20px
+	line-height: 20px
+/*-----benefits--------------------------------------------*/
+.benefits	
+	+clr
+	color: #151515
+	li
+		width: 310px
+		float: left
+		overflow: hidden
+		background: #FFF 
+		padding-bottom: 19px
+		margin-right: 25px
+		text-align: center
+	.last
+		margin-right: 0	
+	.ico
+		margin-bottom: 22px	
+.benefits__title
+	font-weight: bold
+	margin-bottom: 10px
+.benefits__descr
+	font-size: 14px
+	line-height: 18px
 /*-----footer----------------------------------------------*/
 .footer
 	height: 2000px//kill
+	background: #333
 /*-----ico-------------------------------------------------*/
 .ico
 	display: inline-block
 	vertical-align: middle
 .i-logo
 	+s(i-logo)
-	margin-right: 3px	
+	margin-right: 3px
+.i-strong
+	+s(i-strong)
+.i-protect
+	+s(i-protect)
+.i-tech
+	+s(i-tech)			
 /*-----btn-------------------------------------------------*/
 .btn
 	background: $green 					
@@ -152,4 +220,4 @@ body
 		background: $green + #003030
 	&:active
 		background: $green + #505050 
-		+transform (scale(0.97))	 
+		+transform (scale(0.97))

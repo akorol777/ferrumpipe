@@ -25,12 +25,14 @@ body { font-family: "Segoe UI"; }
 
 .h3 { color: #1e1e1e; text-decoration: none; font-weight: bold; font-size: 22px; line-height: 24px; }
 
+.h4 { text-align: center; font-weight: normal; font-size: 24px; line-height: 24px; color: #303030; }
+
 .strip { height: 2px; width: 105px; background: #17cc93; }
 
-/*-----header---------------------------------------- */
-.header { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90); opacity: 0.9; background: white; position: absolute; width: 100%; font-family: arial; }
+.descr { color: #7b7c7e; padding: 0 100px; text-align: center; font-size: 16px; line-height: 19px; }
 
-.header-in { padding: 19px 0px 16px; }
+/*-----header---------------------------------------- */
+.header { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90); opacity: 0.9; background: white; position: absolute; width: 100%; font-family: arial; padding: 19px 0px 16px; }
 
 .header__left { float: left; }
 
@@ -62,13 +64,67 @@ body { font-family: "Segoe UI"; }
 
 .main__price-val { vertical-align: 2px; }
 
+/*-----block--------------------------------------------- */
+.block { padding: 36px 0 59px; background: white; }
+.block .strip { margin: 0 auto 9px; }
+.block .h4 { margin-bottom: 25px; }
+.block .descr { margin-bottom: 47px; }
+.block .benefits { margin-top: 70px; }
+
+.block-dark { background: #edeff4; }
+
+.block_benefits { padding-bottom: 43px; }
+
+/*-----price----------------------------------------------- */
+.price { color: #191919; *zoom: 1; }
+.price:after { content: " "; display: table; clear: both; }
+.price li { float: left; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; overflow: hidden; background: white; padding-bottom: 19px; margin-right: 25px; }
+.price .last { margin-right: 0; }
+.price .btn { margin: 0 auto; display: block; width: 135px; font-size: 14px; line-height: 14px; height: 37px; font-weight: bold; }
+
+.price__img { width: 310px; height: 260px; overflow: hidden; margin-bottom: 19px; }
+.price__img img { height: 100%; }
+
+.price__size, .price__spase, .price__weight { margin: 0 20px; }
+
+.price__size { font-size: 32px; line-height: 32px; margin-bottom: 34px; }
+
+.price__spase { border-bottom: 1px solid #efeff0; padding-bottom: 14px; margin-bottom: 15px; *zoom: 1; }
+.price__spase:after { content: " "; display: table; clear: both; }
+.price__spase .price__cost { color: #0099d3; }
+
+.price__weight { *zoom: 1; margin-bottom: 37px; }
+.price__weight:after { content: " "; display: table; clear: both; }
+.price__weight .price__cost { color: #191919; }
+
+.price__unit { float: left; color: #717171; font-size: 17px; line-height: 25px; }
+
+.price__cost { float: right; font-weight: bold; font-size: 20px; line-height: 20px; }
+
+/*-----benefits-------------------------------------------- */
+.benefits { *zoom: 1; color: #151515; }
+.benefits:after { content: " "; display: table; clear: both; }
+.benefits li { width: 310px; float: left; overflow: hidden; background: white; padding-bottom: 19px; margin-right: 25px; text-align: center; }
+.benefits .last { margin-right: 0; }
+.benefits .ico { margin-bottom: 22px; }
+
+.benefits__title { font-weight: bold; margin-bottom: 10px; }
+
+.benefits__descr { font-size: 14px; line-height: 18px; }
+
 /*-----footer---------------------------------------------- */
-.footer { height: 2000px; }
+.footer { height: 2000px; background: #333333; }
 
 /*-----ico------------------------------------------------- */
 .ico { display: inline-block; vertical-align: middle; }
 
-.i-logo { background: url('../img/icons-se1494f6cf9.png') 0 -30px no-repeat; width: 24px; height: 25px; margin-right: 3px; }
+.i-logo { background: url('../img/icons-s449fea0c9e.png') 0 -300px no-repeat; width: 24px; height: 25px; margin-right: 3px; }
+
+.i-strong { background: url('../img/icons-s449fea0c9e.png') 0 0 no-repeat; width: 80px; height: 80px; }
+
+.i-protect { background: url('../img/icons-s449fea0c9e.png') 0 -180px no-repeat; width: 80px; height: 80px; }
+
+.i-tech { background: url('../img/icons-s449fea0c9e.png') 0 -90px no-repeat; width: 80px; height: 80px; }
 
 /*-----btn------------------------------------------------- */
 .btn { background: #17cc93; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; width: 265px; height: 45px; text-align: center; color: white; font-size: 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; }
