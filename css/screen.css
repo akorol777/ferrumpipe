@@ -112,6 +112,12 @@ body { font-family: "Segoe UI"; }
 
 .benefits__descr { font-size: 14px; line-height: 18px; }
 
+/*-----demo------------------------------------------------ */
+.demo { height: 448px; background: url(../img/demo.png) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; text-align: center; padding: 75px 0 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.demo .btn { width: 235px; height: 47px; font-size: 22px; line-height: 24px; }
+
+.demo__descr { color: white; font-size: 40px; line-height: 48px; margin-bottom: 56px; }
+
 /*-----footer---------------------------------------------- */
 .footer { height: 2000px; background: #333333; }
 
