@@ -26,7 +26,7 @@ body { font-family: "Segoe UI"; }
 
 .h3 { color: #1e1e1e; text-decoration: none; font-weight: bold; font-size: 22px; line-height: 24px; }
 
-.h4 { text-align: center; font-weight: normal; font-size: 24px; line-height: 24px; color: #303030; }
+.h4 { text-align: center; font-weight: normal; font-size: 24px; line-height: 24px; color: #1e1e1e; }
 
 .strip { height: 2px; width: 105px; background: #17cc93; }
 
@@ -72,14 +72,14 @@ body { font-family: "Segoe UI"; }
 .block .descr { margin-bottom: 47px; }
 .block .benefits { margin-top: 70px; }
 
-.block-dark { background: #edeff4; }
+.block-dark { background: #efefef; }
 
 .block_benefits { padding-bottom: 43px; }
 
 .block-in { padding-top: 47px; }
 
 /*-----price----------------------------------------------- */
-.price { color: #191919; *zoom: 1; }
+.price { color: #1e1e1e; *zoom: 1; }
 .price:after { content: " "; display: table; clear: both; }
 .price li { float: left; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; overflow: hidden; background: white; padding-bottom: 19px; margin-right: 25px; }
 .price .btn { margin: 0 auto; display: block; width: 135px; font-size: 14px; line-height: 14px; height: 37px; font-weight: bold; }
@@ -91,20 +91,20 @@ body { font-family: "Segoe UI"; }
 
 .price__size { font-size: 32px; line-height: 32px; margin-bottom: 34px; }
 
-.price__spase { border-bottom: 1px solid #efeff0; padding-bottom: 14px; margin-bottom: 15px; *zoom: 1; }
+.price__spase { border-bottom: 1px solid #efefef; padding-bottom: 14px; margin-bottom: 15px; *zoom: 1; }
 .price__spase:after { content: " "; display: table; clear: both; }
 .price__spase .price__cost { color: #0099d3; }
 
 .price__weight { *zoom: 1; margin-bottom: 37px; }
 .price__weight:after { content: " "; display: table; clear: both; }
-.price__weight .price__cost { color: #191919; }
+.price__weight .price__cost { color: #1e1e1e; }
 
-.price__unit { float: left; color: #717171; font-size: 17px; line-height: 25px; }
+.price__unit { float: left; color: #7b7c7e; font-size: 17px; line-height: 25px; }
 
 .price__cost { float: right; font-weight: bold; font-size: 20px; line-height: 20px; }
 
 /*-----benefits-------------------------------------------- */
-.benefits { *zoom: 1; color: #151515; }
+.benefits { *zoom: 1; color: #1e1e1e; }
 .benefits:after { content: " "; display: table; clear: both; }
 .benefits li { width: 310px; float: left; overflow: hidden; background: white; padding-bottom: 19px; margin-right: 25px; text-align: center; }
 .benefits .ico { margin-bottom: 22px; }
@@ -120,7 +120,7 @@ body { font-family: "Segoe UI"; }
 .demo__descr { color: white; font-size: 40px; line-height: 48px; margin-bottom: 56px; }
 
 /*-----app------------------------------------------------- */
-.app { border-bottom: 2px solid #edeff4; padding-bottom: 71px; margin-bottom: 58px; }
+.app { border-bottom: 2px solid #efefef; padding-bottom: 71px; margin-bottom: 58px; }
 .app .use { margin-top: 71px; }
 
 /*-----use------------------------------------------------- */
@@ -131,7 +131,7 @@ body { font-family: "Segoe UI"; }
 .use__unit:after { content: " "; display: table; clear: both; }
 .use__unit .ico { float: left; margin-top: 7px; }
 
-.use__unit-descr { color: #747474; margin-left: 59px; line-height: 25px; }
+.use__unit-descr { color: #7b7c7e; margin-left: 59px; line-height: 25px; }
 
 /*-----sample----------------------------------------------- */
 .sample { *zoom: 1; }
@@ -140,14 +140,14 @@ body { font-family: "Segoe UI"; }
 
 .contacts { float: left; width: 325px; margin-right: 75px; }
 
-.contacts__descr { color: #838383; line-height: 19px; margin-bottom: 20px; }
+.contacts__descr { color: #7b7c7e; line-height: 19px; margin-bottom: 20px; }
 
-.contacts__mail { text-decoration: none; color: #16ae7e; font-size: 24px; line-height: 24px; margin: 16px 0 18px; display: inline-block; }
+.contacts__mail { text-decoration: none; color: #17cc93; font-size: 24px; line-height: 24px; margin: 16px 0 18px; display: inline-block; }
 .contacts__mail:hover { text-decoration: underline; }
 
 .contacts__phone { font-size: 24px; line-height: 24px; margin-bottom: 29px; }
 
-.contacts__adress { color: #6c6c6c; font-size: 16px; line-height: 19px; }
+.contacts__adress { color: #7b7c7e; font-size: 16px; line-height: 19px; }
 
 .order { float: left; *zoom: 1; }
 .order:after { content: " "; display: table; clear: both; }
@@ -160,8 +160,42 @@ body { font-family: "Segoe UI"; }
 .order__img { overflow: hidden; height: 286px; width: 254px; }
 .order__img img { height: 100%; }
 
+/*-----form------------------------------------------------ */
+.form { padding: 0px 0px 0px 22px; width: 304px; *zoom: 1; }
+.form:after { content: " "; display: table; clear: both; }
+.form .btn { float: right; height: 37px; width: 205px; font-size: 14px; line-height: 14px; font-weight: bold; }
+
+.form__radio { font-size: 16px; line-height: 16px; margin-bottom: 25px; }
+
+.radio__item { height: 16px; position: relative; display: inline-block; vertical-align: top; cursor: pointer; margin-right: 8px; }
+.radio__item span { display: inline-block; vertical-align: top; margin-left: 5px; }
+.radio__item input { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; position: relative; }
+.radio__item input + span { color: #7b7c7e; }
+.radio__item input + span:before { content: ""; position: absolute; top: 0px; left: 0px; width: 16px; height: 16px; border: 2px solid #c6c9d1; border-radius: 50%; background: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.radio__item input:checked + span:after { content: ""; position: absolute; top: 0px; left: 0px; width: 16px; height: 16px; border-radius: 50%; background: #17cc93; }
+
+.form__measure { *zoom: 1; margin-bottom: 4px; }
+.form__measure:after { content: " "; display: table; clear: both; }
+
+.form__input { border: 1px solid #c6c9d1; -webkit-border-radius: 1px; -moz-border-radius: 1px; -ms-border-radius: 1px; -o-border-radius: 1px; border-radius: 1px; height: 35px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 10px; color: #7b7c7e; width: 100%; margin-bottom: 15px; }
+
+.form__input_small { width: 140px; float: left; }
+
+.form__input_right { float: right; }
+
+.form__amount { color: #1e1e1e; font-weight: bold; font-size: 20px; line-height: 20px; margin-bottom: 36px; }
+
+.form__contacts { margin-bottom: 28px; }
+
 /*-----footer---------------------------------------------- */
-.footer { height: 2000px; background: #333333; }
+.footer { height: 65px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #efefef; *zoom: 1; padding: 27px 0 0 0; font-size: 11px; line-height: 11px; color: black; }
+.footer:after { content: " "; display: table; clear: both; }
+
+.footer__copy { float: left; }
+
+.footer__done { float: right; }
+.footer__done a { color: #17cc93; text-decoration: none; }
+.footer__done a:hover { text-decoration: underline; }
 
 /*-----ico------------------------------------------------- */
 .ico { display: inline-block; vertical-align: middle; }
@@ -184,5 +218,5 @@ body { font-family: "Segoe UI"; }
 
 /*-----btn------------------------------------------------- */
 .btn { background: #17cc93; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; width: 265px; height: 45px; text-align: center; color: white; font-size: 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; }
-.btn:hover { background: #17fcc3; }
-.btn:active { background: #67ffe3; -webkit-transform: scale(0.97); -moz-transform: scale(0.97); -ms-transform: scale(0.97); -o-transform: scale(0.97); transform: scale(0.97); }
+.btn:hover { background: #27dca3; }
+.btn:active { background: #47fcc3; -webkit-transform: scale(0.97); -moz-transform: scale(0.97); -ms-transform: scale(0.97); -o-transform: scale(0.97); transform: scale(0.97); }

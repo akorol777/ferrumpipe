@@ -1,6 +1,8 @@
-$text-dark: #1e1e1e
-$text-light: #7b7c7e
-$green: #17cc93
+$green: #17cc93 
+$gray-light: #efefef
+$gray-form: #c6c9d1
+$gray: #7b7c7e
+$black: #1e1e1e
 body
 	font-family: "Segoe UI" 
 .wrap
@@ -10,7 +12,7 @@ body
 	.last
 		margin-right: 0			
 .h3
-	color: $text-dark
+	color: $black
 	text-decoration: none
 	font-weight: bold
 	font-size: 22px
@@ -20,13 +22,13 @@ body
 	font-weight: normal
 	font-size: 24px
 	line-height: 24px
-	color: #303030 
+	color: $black 
 .strip
 	height: 2px
 	width: 105px
 	background: $green
 .descr
-	color: $text-light
+	color: $gray
 	padding: 0 100px
 	text-align: center
 	font-size: 16px
@@ -60,7 +62,7 @@ body
 		margin-right: 37px
 	a			
 		text-decoration: none
-		color: $text-dark
+		color: $black
 		font-family: "myriad pro"
 		vertical-align: bottom
 		line-height: 6px 
@@ -108,14 +110,14 @@ body
 	.benefits
 		margin-top: 70px	
 .block-dark		
-	background: #EDEFF4	
+	background: $gray-light	
 .block_benefits
 	padding-bottom: 43px	
 .block-in
 	padding-top: 47px	 	
 /*-----price-----------------------------------------------*/	
 .price
-	color: #191919 
+	color: $black 
 	+clr
 	li
 		float: left
@@ -146,7 +148,7 @@ body
 	line-height: 32px
 	margin-bottom: 34px
 .price__spase
-	border-bottom: 1px solid #efeff0
+	border-bottom: 1px solid $gray-light
 	padding-bottom: 14px
 	margin-bottom: 15px
 	+clr
@@ -156,11 +158,10 @@ body
 	+clr
 	margin-bottom: 37px
 	.price__cost
-		color: #191919 
-.price__unit, .price__cost
+		color: $black 
 .price__unit
 	float: left
-	color: #717171 
+	color: $gray 
 	font-size: 17px
 	line-height: 25px
 .price__cost
@@ -171,7 +172,7 @@ body
 /*-----benefits--------------------------------------------*/
 .benefits	
 	+clr
-	color: #151515
+	color: $black
 	li
 		width: 310px
 		float: left
@@ -208,14 +209,12 @@ body
 	margin-bottom: 56px
 /*-----app-------------------------------------------------*/
 .app
-	border-bottom: 2px solid #edeff4 
+	border-bottom: 2px solid $gray-light 
 	padding-bottom: 71px
 	margin-bottom: 58px
 	.use
 		margin-top: 71px
-
 /*-----use-------------------------------------------------*/
-.use
 .use__roll
 	+clr
 	margin-bottom: 24px		
@@ -228,10 +227,9 @@ body
 		float: left
 		margin-top: 7px
 .use__unit-descr
-	color: #747474
+	color: $gray
 	margin-left: 59px 
 	line-height: 25px		
-
 /*-----sample-----------------------------------------------*/	
 .sample
 	+clr
@@ -243,12 +241,12 @@ body
 	width: 325px
 	margin-right: 75px 
 .contacts__descr
-	color: #838383
+	color: $gray
 	line-height: 19px 
 	margin-bottom: 20px
 .contacts__mail
 	text-decoration: none
-	color: #16ae7e
+	color: $green
 	font-size: 24px
 	line-height: 24px
 	margin: 16px 0 18px 
@@ -260,7 +258,7 @@ body
 	line-height: 24px
 	margin-bottom: 29px
 .contacts__adress
-	color: #6C6C6C 
+	color: $gray 
 	font-size: 16px
 	line-height: 19px
 .order		
@@ -278,10 +276,105 @@ body
 	width: 254px
 	img
 		height: 100%	
+/*-----form------------------------------------------------*/
+.form
+	padding: 0px 0px 0px 22px 
+	width: 304px
+	+clr
+	.btn
+		float: right
+		height: 37px
+		width: 205px
+		font-size: 14px
+		line-height: 14px
+		font-weight: bold
+$rad-size: 16px	
+.form__radio
+	font-size: 16px
+	line-height: 16px
+	margin-bottom: 25px
+.radio__item
+	height: $rad-size 
+	position: relative
+	display: inline-block
+	vertical-align: top
+	cursor: pointer
+	margin-right: 8px
+	span
+		display: inline-block
+		vertical-align: top
+		margin-left: 5px
+	input
+		+opacity(0)
+		position: relative
+	input + span
+		color: $gray 
+		&:before
+			content: ""
+			position: absolute
+			top: 0px
+			left: 0px
+			width: $rad-size
+			height: $rad-size
+			border: 2px solid $gray-form
+			border-radius: 50%
+			background: #fff
+			+opacity(1)
+			+box
+	input:checked + span
+		&:after
+			content: ""
+			position: absolute
+			top: 0px
+			left: 0px
+			width: $rad-size
+			height: $rad-size
+			border-radius: 50%
+			background: $green
+.form__measure
+	+clr
+	margin-bottom: 4px
+.form__input
+	border: 1px solid $gray-form
+	+border-radius (1px) 
+	height: 35px
+	+box
+	padding-left: 10px
+	color: $gray 
+	width: 100%
+	margin-bottom: 15px
+.form__input_small
+	width: 140px
+	float: left
+.form__input_right
+	float: right	
+.form__amount
+	color: $black
+	font-weight: bold
+	font-size: 20px
+	line-height: 20px
+	margin-bottom: 36px  	
+.form__contacts	
+	margin-bottom: 28px
 /*-----footer----------------------------------------------*/
 .footer
-	height: 2000px//kill
-	background: #333
+	height: 65px
+	+box
+	background: $gray-light
+	+clr
+	padding: 27px 0 0 0 
+	font-size: 11px
+	line-height: 11px
+	color: #000
+.footer__copy
+	float: left	
+.footer__done
+	float: right
+	a
+		color: $green
+		text-decoration: none
+		&:hover
+			text-decoration: underline 
 /*-----ico-------------------------------------------------*/
 .ico
 	display: inline-block
@@ -315,7 +408,7 @@ body
 	+box
 	+transition (0.2s)
 	&:hover
-		background: $green + #003030
+		background: $green + #101010
 	&:active
-		background: $green + #505050 
+		background: $green + #303030 
 		+transform (scale(0.97))
