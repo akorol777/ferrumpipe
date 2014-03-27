@@ -32,8 +32,12 @@ body { font-family: "Segoe UI"; }
 
 .descr { color: #7b7c7e; padding: 0 100px; text-align: center; font-size: 16px; line-height: 19px; }
 
+.link { text-decoration: none; display: inline-block; }
+.link:hover { text-decoration: underline; }
+
 /*-----header---------------------------------------- */
-.header { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90); opacity: 0.9; background: white; position: absolute; width: 100%; font-family: arial; padding: 19px 0px 16px; }
+.header { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90); opacity: 0.9; background: white; position: fixed; width: 100%; font-family: arial; padding: 19px 0px 16px; height: 61px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.header .phone { color: #1e1e1e; }
 
 .header__left { float: left; }
 
@@ -142,10 +146,9 @@ body { font-family: "Segoe UI"; }
 
 .contacts__descr { color: #7b7c7e; line-height: 19px; margin-bottom: 20px; }
 
-.contacts__mail { text-decoration: none; color: #17cc93; font-size: 24px; line-height: 24px; margin: 16px 0 18px; display: inline-block; }
-.contacts__mail:hover { text-decoration: underline; }
+.contacts__mail { color: #17cc93; font-size: 24px; line-height: 24px; margin: 16px 0 18px; }
 
-.contacts__phone { font-size: 24px; line-height: 24px; margin-bottom: 29px; }
+.contacts__phone { font-size: 24px; line-height: 24px; margin-bottom: 29px; color: #1e1e1e; }
 
 .contacts__adress { color: #7b7c7e; font-size: 16px; line-height: 19px; }
 
