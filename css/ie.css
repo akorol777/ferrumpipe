@@ -1,0 +1,2 @@
+.ie8 body { background: red; }
+.ie8 .header { background: red !important; }
